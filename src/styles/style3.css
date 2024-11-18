@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header img {
+  width: 30px;
+  height: auto;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a8b, #fecfef, #fe6b8b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #444;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-container p {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.form .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.form .subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #ff7e5f;.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+  outline: none;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.input:focus + .cut,
+.input:valid + .cut {
+  width: 100%;
+}
+
+.input:focus + .cut + .placeholder,
+.input:not(:placeholder-shown) + .cut + .placeholder {
+  top: -12px;
+  font-size: 0.75rem;
+  color: #ff7e5f;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff7e5f;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-top: 1rem;
+}
+
+.submit:hover {
+  background-color: #ff6a47;
+  box-shadow: 0 8px 20px rgba(255, 122, 87, 0.3);
+}
+
+.signup-link {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #ff7e5f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff6a47;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

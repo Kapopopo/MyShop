@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header img {
+  width: 30px;
+  height: auto;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/images/c.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #444;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.login-container {
+  max-width: 380px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.login-container p {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #ff7e5f;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff7e5f;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #ff6a47;
+  box-shadow: 0 8px 20px rgba(255, 122, 87, 0.3);
+}
+
+.login-container .signup-link {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.login-container .signup-link a {
+  color: #ff7e5f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container .signup-link a:hover {
+  text-decoration: underline;
+}
